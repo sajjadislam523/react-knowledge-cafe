@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -10,7 +9,11 @@ const Blogs = () => {
             .then((data) => setBlogs(data));
     }, []);
 
-    return <div></div>;
+    return (
+        <div className="md:w-2/3">
+            <h1 className="text-4xl">Blogs: {blogs.length}</h1>
+        </div>
+    );
 };
 
 export default Blogs;
