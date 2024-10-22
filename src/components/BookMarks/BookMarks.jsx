@@ -12,12 +12,12 @@ const BookMarks = ({ bookmarks, readingTime }) => {
                 </div>
 
                 <div className="flex flex-col flex-1 mt-2 rounded-lg bg-slate-100">
-                    <h1 className="pt-2 text-xl font-bold text-center font-exo2">
+                    <h1 className="p-4 text-xl font-bold text-center font-exo2">
                         Bookmarked Blogs: {bookmarks.length}
                     </h1>
                     <div className="h-full overflow-auto">
-                        {bookmarks.map((bookmark) => (
-                            <BookMark key={bookmark.id} bookmark={bookmark} />
+                        {bookmarks.map((bookmark, idx) => (
+                            <BookMark key={idx} bookmark={bookmark} />
                         ))}
                     </div>
                 </div>

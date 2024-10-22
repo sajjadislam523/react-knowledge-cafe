@@ -12,9 +12,14 @@ function App() {
         setBookmarks(newBookmarks);
     };
 
-    const handleMarkAsRead = (time) => {
-        console.log(time);
+    const handleMarkAsRead = (time, id) => {
+        // console.log(time);
         setReadingTime(readingTime + time);
+        // Remove the read blog from bookmark
+        const remainingBookmarks = bookmarks.filter(
+            (bookmark) => bookmark.id !== id
+        );
+        setBookmarks(remainingBookmarks);
     };
 
     return (
