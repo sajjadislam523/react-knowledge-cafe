@@ -1,8 +1,16 @@
-# React + Vite
+# Blog sharing project using React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a simple blog sharing project based on react. It has some functionality written below.
 
-Currently, two official plugins are available:
+-   **Blog section**: For showcasing the blogs fetched from JSON data.
+-   **Add to bookmark button**: To add the favorite blogs in the bookmark section.
+-   **Mark as read button**: For marking the blogs as read and removing the blogs from bookmark section.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+And it also have some core concepts of React.
+
+-   **Components**
+-   **useState**
+-   **Arrow Function**
+-   **Props**
+
+[Live Preview](https://react-knowledge-cafe-wheat.vercel.app/)
